@@ -1,6 +1,5 @@
 {
   "background_color": "#ffffff",
-  "dir": "ltr",
   "display": "standalone",
   "name": "Pasumai Kural",
   "orientation": "any",
@@ -9,5 +8,17 @@
   "start_url": "/Pasumai-Kural/",
   "theme_color": "rgb(34, 139, 34)",
   "id": "/Pasumai-Kural/",
-  "description": "Pasumai Kural is an agricultural information app providing crop cultivation practices, pest and disease identification, and management solutions for more than 35 crops."
+  "description": "Pasumai Kural is an agricultural information app.",
+  "icons": [
+    {
+      "src": "/Pasumai-Kural/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Pasumai-Kural/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
