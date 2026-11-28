@@ -237,5 +237,38 @@ if (localStorage.getItem("pk_installed") === "yes") {
     installBtn.style.display = "none";
 }
 </script>
+<button id="installBtn" style="
+position:fixed;
+right:15px;
+bottom:85px;
+z-index:9999;
+background:#e0252f;
+color:white;
+border:0;
+border-radius:30px;
+padding:14px 20px;
+font-size:16px;
+font-weight:bold;
+box-shadow:0 4px 12px #0008;">
+📲 Install Pasumai Kural
+</button>
+ <script>
+const btn = document.getElementById("installBtn");
+
+function checkInstalled() {
+  const installed =
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone === true;
+
+  btn.style.display = installed ? "none" : "block";
+}
+
+checkInstalled();
+
+window.addEventListener("appinstalled", checkInstalled);
+
+window.matchMedia('(display-mode: standalone)')
+  .addEventListener('change', checkInstalled);
+</script>
 </body>
 </html>
