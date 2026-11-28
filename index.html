@@ -222,5 +222,20 @@ window.addEventListener("appinstalled", () => {
 <!-- INSTALL BUTTON SCRIPT END -->
 
 </script>
+ <script>
+const installBtn = document.getElementById("installBtn");
+
+if (
+  window.matchMedia('(display-mode: standalone)').matches ||
+  window.navigator.standalone === true
+) {
+  installBtn.style.display = "none";
+}
+
+window.addEventListener("appinstalled", () => {
+  installBtn.style.display = "none";
+});
+</script>
+ 
 </body>
 </html>
