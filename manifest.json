@@ -1,24 +1,23 @@
 {
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "name": "Pasumai Kural",
-  "orientation": "any",
-  "scope": "/Pasumai-Kural/",
-  "short_name": "Pasumai",
-  "start_url": "/Pasumai-Kural/",
-  "theme_color": "rgb(34, 139, 34)",
-  "id": "/Pasumai-Kural/",
-  "description": "Pasumai Kural is an agricultural information app.",
-  "icons": [
-    {
-      "src": "/Pasumai-Kural/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/Pasumai-Kural/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+"name": "Pasumai Kural",
+"short_name": "Pasumai",
+"description": "Pasumai Kural - Agricultural information for farmers",
+"start_url": "./",
+"scope": "./",
+"display": "standalone",
+"background_color": "#ffffff",
+"theme_color": "#229954",
+"orientation": "any",
+"icons": [
+{
+"src": "./pasumai-kural-192.png",
+"sizes": "192x192",
+"type": "image/png"
+},
+{
+"src": "./pasumai-kural-512.png",
+"sizes": "512x512",
+"type": "image/png"
+}
+]
 }
