@@ -220,34 +220,7 @@ window.addEventListener("appinstalled", () => {
 });
 </script>
 <!-- INSTALL BUTTON SCRIPT END -->
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js")
-      .then(() => console.log("Service Worker Registered"))
-      .catch(error => console.log("Service Worker Error:", error));
-  });
-}
-</script>
- <script>
-const installBtn = document.getElementById("installBtn");
 
-// Hide inside installed app
-if (window.matchMedia('(display-mode: standalone)').matches ||
-    window.navigator.standalone === true) {
-    installBtn.style.display = "none";
-}
-
-// Hide after successful installation
-window.addEventListener("appinstalled", () => {
-    installBtn.style.display = "none";
-    localStorage.setItem("pk_installed", "yes");
-});
-
-// Remember installation
-if (localStorage.getItem("pk_installed") === "yes") {
-    installBtn.style.display = "none";
-}
 </script>
 </body>
 </html>
