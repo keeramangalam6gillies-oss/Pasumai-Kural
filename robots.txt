@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://keeramangalam6gillies-oss.github.io/Pasumai-Kural/sitemap.xml
